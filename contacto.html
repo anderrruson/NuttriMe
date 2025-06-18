@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Hype Store</title>
+    <!-- Enlace al archivo CSS externo para los estilos -->
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1> 
+    </header>
+    
+    <!-- Barra de navegación con un botón para regresar a la página principal -->
+    <nav>
+        <ul style="list-style: none; display: flex; justify-content: center; gap: 20px; padding: 10px; background-color: #f4f4f4; border-radius: 10px;">
+            <li><a href="index.html" style="text-decoration: none; color: #333; font-weight: bold;">Regresar</a></li>
+        </ul>         
+    </nav>
+
+    <!-- Sección del formulario de contacto -->
+    <section class="contact-form">
+        <h2>¿Tienes alguna pregunta? Contáctanos</h2>
+        <form action="#" method="post">
+            <!-- Campo para el nombre -->
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Campo para el correo electrónico -->
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Área de texto para el mensaje -->
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <!-- Botón para enviar el formulario -->
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Sección de información de contacto -->
+    <section class="contact-info">
+        <h2>Nuestras Redes</h2>
+        <p>📍 Dirección: Santa Ana, El Salvador</p>
+        <p>📞 Teléfono: +503 1234-5678</p>
+        <p>📧 Email: contacto@Fitnessapp.com</p>
+        <li><a href="https://mail.google.com/mail/u/1/?ogbl#inbox" target="_blank" rel="noopener noreferrer">Envianos un correo</a></li>
+
+        
+        <!-- Íconos de redes sociales con enlaces -->
+        <div class="social-icons">
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="Instagram"></a>
+            <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQnULcBfSqH9C3ooVVkPDA9rxRyqHoR3M1ng&s" alt="Facebook"></a>
+            <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjQT_Dyh40TZUX8jAmuw8rhrs50YB7fh8qcw&s" alt="TikTok"></a>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Fitness Me - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
