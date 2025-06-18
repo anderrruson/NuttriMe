@@ -1,0 +1,146 @@
+/* Importa una fuente elegante */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --main-green: #4CAF50;
+  --dark-green: #388E3C;
+  --light-green: #C8E6C9;
+  --white: #FFFFFF;
+  --soft-gray: #F5F5F5;
+  --text-gray: #555555;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--soft-gray);
+  color: var(--text-gray);
+}
+
+header {
+  background-color: var(--main-green);
+  padding: 1.5rem 2rem;
+  color: var(--white);
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--light-green);
+}
+
+main {
+  padding: 2rem;
+  text-align: center;
+}
+
+main h2 {
+  color: var(--dark-green);
+  margin-bottom: 1rem;
+}
+
+main p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.button {
+  background-color: var(--main-green);
+  color: var(--white);
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.button:hover {
+  background-color: var(--dark-green);
+  transform: translateY(-2px);
+}
+
+section {
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: var(--white);
+  max-width: 900px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+  background-color: var(--main-green);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+/* Mantengo lo anterior, solo añado nuevas secciones abajo */
+
+.columns-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .column {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    flex: 1 1 250px;
+    max-width: 300px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .column h3 {
+    color: var(--dark-green);
+    margin-bottom: 0.8rem;
+  }
+  
+  .column p {
+    line-height: 1.5;
+    color: var(--text-gray);
+  }
+  
+  /* Clase que se activa con JS al hacer scroll */
+  .column.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  

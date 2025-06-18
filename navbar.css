@@ -1,0 +1,119 @@
+/* Reinicia márgenes, rellenos y establece el box-sizing para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Estilo general para el body */
+body {
+    text-align: center; /* Centra el texto en la página */
+    background: #f4f4f4; /* Establece un color de fondo gris claro */
+}
+
+/* Estilos para el header (encabezado) */
+header {
+    background: #fff; /* Fondo blanco para el encabezado */
+    padding: 15px 0; /* Espaciado superior e inferior */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera debajo del encabezado */
+    font-family: Arial, sans-serif; /* Establece la fuente predeterminada */
+}
+
+/* Estilos para el nav (barra de navegación) */
+nav {
+    display: flex; /* Usa Flexbox para la disposición de los elementos */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    align-items: center; /* Alinea los elementos al centro verticalmente */
+    width: 90%; /* Ancho del 90% de la pantalla */
+    margin: auto; /* Centra el nav horizontalmente */
+}
+
+/* Estilos para el logo */
+.logo {
+    padding: 40px;
+    font-size: 50px; /* Tamaño de la fuente del logo */
+    font-weight: bold; /* Hace el texto en negrita */
+    color: #27ae60; /* Color verde del logo */
+}
+
+.nav-linksaa {
+    color: #333;
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; /* Usa Flexbox para que los enlaces se dispongan en línea */
+    gap: 20px; /* Espacio de 20px entre cada enlace */
+    text-align: center;
+}
+
+/* Estilos para la lista de enlaces de navegación */
+.nav-links {
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; /* Usa Flexbox para que los enlaces se dispongan en línea */
+    gap: 20px; /* Espacio de 20px entre cada enlace */
+}
+
+/* Estilos para los enlaces dentro de .nav-links */
+.nav-links li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #333; /* Color gris oscuro para el texto */
+    font-size: 16px; /* Tamaño de fuente de los enlaces */
+    padding: 10px; /* Espaciado interno de los enlaces */
+    border: 1px solid #ddd; /* Agregado: borde alrededor de los enlaces */
+    border-radius: 5px; /* Bordes redondeados para los enlaces */
+    margin: 5px 0; /* Agregado: margen arriba y abajo para los enlaces */
+}
+
+/* Estilo para el botón de descargar */
+.descargar-btn {
+    background: #27ae60; /* Fondo verde */
+    color: white; /* Texto blanco */
+    padding: 10px 15px; /* Espaciado dentro del botón */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo para el enlace de iniciar sesión */
+.iniciar-sesion {
+    border: 1px solid #27ae60; /* Borde verde */
+    color: #27ae60; /* Texto verde */
+    padding: 10px 15px; /* Espaciado dentro del enlace */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos para la sección .hero (sección destacada) */
+.hero {
+    margin-top: 50px; /* Espaciado superior */
+    padding: 50px; /* Espaciado interno */
+    background: #27ae60; /* Fondo verde */
+    color: white; /* Texto blanco */
+}
+
+/* Estilos para el título h1 dentro de .hero */
+h1 {
+    font-size: 36px; /* Tamaño grande para el título */
+}
+
+/* Estilos para el botón de descarga dentro de .hero */
+.boton-descarga {
+    display: inline-block; /* Hace que el botón se ajuste al contenido */
+    margin-top: 20px; /* Espaciado superior */
+    padding: 15px 20px; /* Espaciado interno */
+    background: white; /* Fondo blanco */
+    color: #27ae60; /* Texto verde */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    border-radius: 5px; /* Bordes redondeados */
+    font-weight: bold; /* Texto en negrita */
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px; /* Espaciado entre elementos del navbar */
+        padding: 15px 0; /* Espaciado arriba y abajo */
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 30px; /* Más espacio entre los enlaces */
+    }
+}
